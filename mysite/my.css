@@ -1,0 +1,247 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body,html{
+  font: 15px/1.5 font1, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#bac7db;
+  height: 100%;
+}
+.main1{
+	width:80%;
+  	margin:auto;
+  	overflow:hidden;
+}
+
+header{
+	background:#6091e0;
+	float:none;
+    width:100%;
+  	padding-bottom:20px;
+  	margin:auto;
+  	overflow:hidden;
+  	padding-top:30px;
+  	min-height:70px;
+  	border-bottom:#011b44 5px solid;
+}
+header nav{
+	float:right;
+ 	margin-top:10px;
+
+}
+header li{
+	float:left;
+  	display:inline;
+  	padding: 0 20px 0 20px;
+  	position: relative;
+
+   
+}
+
+header h1{
+	margin: 0;
+	float: left;
+
+}
+header .spanmain{
+	
+	font-family: 'AfterShok';
+	color:#101b2b; 
+
+}
+.parallax1 .spanmain1{
+	
+	font-family: 'AfterShok';
+	color:#101b2b;
+  font-size:40px;
+
+}
+.parallax1 q{
+  font-size: 25px;
+}
+.parallax1 a{
+  text-decoration: none;
+  color: #313d3b;
+}
+@font-face {
+	font-family: 'AfterShok';
+    src: url( fonts/FasterOne-Regular.ttf ) format("truetype");
+
+}
+@font-face{
+	font-family: 'font1';
+	src:url(fonts/Amble-Light-webfont.ttf) format("truetype");
+}
+header a{
+	color:#bccce5;
+  	text-decoration:none;
+  	text-transform: uppercase;
+  	font-size:16px;
+}
+header a:hover{
+	 color:#cccccc;
+  font-weight:bold;
+}
+.parallax{
+	background-image: url("my3.png");
+	height: 500px;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.parallax11{
+  background-image: url("my.png");
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.parallax1{
+	height:400px;
+	background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;;
+	font-size:36px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  color: #7e8a9e;
+}
+.sticky{
+	position: fixed;
+	top:0;
+	width: 100%;
+}
+.sticky + .content{
+	padding-top:0px;
+}
+.content{
+	padding: 0px;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #ada775;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
