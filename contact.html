@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My</title>
+	<link rel="stylesheet" type="text/css" href="my.css">
+	<link rel="icon" href="images/download.png" type="image/gif" sizes="16x16">
+</head>
+<body  onload="myFunction();startTime();" style="margin:0;" >
+<div id="loader"></div>
+<audio id="myAudio" controller autoplay >
+  
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ <div style="display:none;" id="myDiv" class="animate-bottom">
+<header id="main1">
+	<div class="main1">
+		<h1><span class="spanmain"><img src="images/download.png" height="20px" > &nbsp; Varun raj Arisetty</span></h1>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About me</a></li>
+				<li><a href="contact.html">Contact me</a></li>
+			</ul>
+			
+		</nav>
+	</div>
+<div id="txt"></div>	
+</header>
+<div class="parallax"></div>
+
+<div class="parallax1">
+<h1><span class="spanmain1"> Varun raj Arisetty</span></h1>
+<div class="Iam">
+
+<p>This is</p>
+<b>
+  <div class="innerIam">
+    Varun raj Arisetty<br /> 
+    from Bobbili<br />
+    Computer Science Engineering<br />
+    <br />
+    Thank you!!!
+    </div>
+</b>
+
+</div>
+</div>
+<div class="parallax11"></div>
+
+
+<script>
+function myFunctionm() {
+    var x = document.getElementById("myAudio").autoplay;
+   
+</script>
+</body>
+<footer>
+	
+	<h2 style ="text-align:center;">All Rights reserved</h2>
+</footer>
+</div>
+</html>
+<script type="text/javascript">
+	
+	// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction1()};
+
+// Get the header
+var header = document.getElementById("main1");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction1() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+<script type="text/javascript">
+	var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 300);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    var d = today.getDate();
+    var di = today.getMonth();
+    var du = today.getFullYear();
+    
+
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML ="Time:"+
+    h + ":" + m + ":" + s + "&nbsp;&nbsp;&nbsp;&nbsp;"+"Date:"+d+"/"+di+"/"+du;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
